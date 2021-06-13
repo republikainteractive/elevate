@@ -1,0 +1,62 @@
+/*!
+  * Republika CSS RESPONSIVE
+  * https://republika.ro
+  *
+  * Copyright (c) 2021 Republika
+  *
+ */
+
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .row {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .horizontal-menu {
+        display: block;
+    }
+    .horizontal-menu .brand {
+        display: block;
+        margin-bottom: 1rem;
+    }
+    .horizontal-menu ul {
+        overflow: auto;
+        white-space: nowrap;
+        padding-bottom: 1rem;
+    }
+}
+
+
