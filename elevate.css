@@ -512,6 +512,14 @@ input[type='radio'] {
     margin-left: .5rem;
 }
 
+.container-fluid {
+    margin: 0 auto;
+    padding-right: var(--rp-gutter-x, 0.75rem);
+    padding-left: var(--rp-gutter-x, 0.75rem);
+    position: relative;
+    width: 100%;
+}
+
 .container {
     margin: 0 auto;
     padding-right: var(--rp-gutter-x, 0.75rem);
