@@ -455,6 +455,8 @@ progress:not([value]) {
     left: 1px;
     cursor: pointer;
     height: 41px;
+    border-radius: 0.4rem 0.4rem 0 0;
+    margin-right: 1rem;
 }
 .tab [type=radio] {
     display: none;
@@ -468,7 +470,7 @@ progress:not([value]) {
     bottom: 0;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 0 0 0.4rem 0.4rem;
+    border-radius: 0 0.4rem 0.4rem 0.4rem;
 }
 [type=radio]:checked ~ label {
     background: white;
