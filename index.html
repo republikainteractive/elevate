@@ -12,10 +12,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>
     <link rel="stylesheet" href="elevate.css"/>
-    <link rel="stylesheet" href="extra.css"/>
-    <link rel="stylesheet" href="responsive.css"/>
     <link rel="stylesheet" href="demo.css"/>
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
@@ -93,39 +91,71 @@
 
     <section class="container">
         <div class="demo">
-            <h3><strong>Buttons</strong></h3>
-            <p>Lorem ipsum description</p>
+            <h3><strong>Default Buttons</strong></h3>
+            <p class="text-muted">Lorem ipsum description</p>
             <div class="buttons">
-                <a class="button">Default Button</a>
-                <button class="button button-outline">Button Outline</button>
-                <input class="button button-clear" type="submit" value="Clear Button">
-                <a class="button button-success">Button Success</a>
+                <a class="button button-primary">Primary</a>
+                <a class="button button-secondary">Secondary</a>
+                <a class="button button-warning">Warning</a>
+                <a class="button button-success">Success</a>
+                <a class="button button-info">Info</a>
+                <a class="button button-danger">Danger</a>
+                <a class="button button-link">Link</a>
+            </div>
+            <div class="border-bottom mb-5"></div>
+
+            <h3><strong>Disabled Buttons</strong></h3>
+            <p class="text-muted">Lorem ipsum description</p>
+            <div class="buttons">
+                <a class="button button-primary disabled">Primary</a>
+                <a class="button button-secondary disabled">Secondary</a>
+                <a class="button button-warning disabled">Warning</a>
+                <a class="button button-success disabled">Success</a>
+                <a class="button button-info disabled">Info</a>
+                <a class="button button-danger disabled">Danger</a>
+                <a class="button button-link disabled">Link</a>
             </div>
 
-            <div class="row">
-                <div class="column">
-                    <a class="button">Default .button</a>
-                    <a class="button button-outline">Outlined .button</a>
-                    <a class="button button-clear">Clear .button</a>
-                </div>
-                <div class="column">
-                    <a class="button button-black">.button-black</a>
-                    <a class="button button-black button-outline">.button-black</a>
-                    <a class="button button-black button-clear">.button-black</a></div>
-                <div class="column">
-                    <a class="button button-small">.button-small</a>
-                    <a class="button button-small button-outline">.button-small</a>
-                    <a class="button button-small button-clear">.button-small</a>
-                </div>
-                <div class="column">
-                    <a class="button button-large">.button-large</a>
-                    <a class="button button-large button-success">.button-large</a>
-                    <a class="button button-large button-clear">.button-large</a>
-                </div>
+            <div class="border-bottom mb-5"></div>
+
+            <h3><strong>Outline Buttons</strong></h3>
+            <p class="text-muted">Lorem ipsum description</p>
+            <div class="buttons">
+                <a class="button button-outline-primary">Primary</a>
+                <a class="button button-outline-secondary ">Secondary</a>
+                <a class="button button-outline-warning ">Warning</a>
+                <a class="button button-outline-success ">Success</a>
+                <a class="button button-outline-info ">Info</a>
+                <a class="button button-outline-danger ">Danger</a>
+            </div>
+
+            <div class="border-bottom mb-5"></div>
+
+            <h3><strong>Size Buttons</strong></h3>
+            <p class="text-muted">Lorem ipsum description</p>
+            <div class="buttons">
+                <a class="button button-primary button-large">Primary</a>
+                <a class="button button-secondary button-large">Secondary</a>
+                <a class="button button-warning button-large">Warning</a>
+                <a class="button button-success button-large">Success</a>
+                <a class="button button-info button-large">Info</a>
+                <a class="button button-danger button-large">Danger</a>
+            </div>
+
+            <div class="border-bottom mb-5"></div>
+
+            <h3><strong>Size Buttons</strong></h3>
+            <p class="text-muted">Lorem ipsum description</p>
+            <div class="buttons">
+                <a class="button button-primary button-small">Primary</a>
+                <a class="button button-secondary button-small">Secondary</a>
+                <a class="button button-warning button-small">Warning</a>
+                <a class="button button-success button-small">Success</a>
+                <a class="button button-info button-small">Info</a>
+                <a class="button button-danger button-small">Danger</a>
             </div>
         </div>
     </section>
-
 
     <section class="container">
         <div class="demo">
@@ -153,23 +183,15 @@
                     </div>
                     <div class="row">
                         <div class="column">
-                            <p>
-                                <label for="color">Color</label>
-                                <input class="fluid" type="color" placeholder="Company" id="color">
-                            </p>
-                        </div>
-                        <div class="column">
-                            <p>
-                                <label for="date">Date</label>
-                                <input class="fluid" type="date" placeholder="Date" id="date">
-                            </p>
+                            <label for="date">Date</label>
+                            <input class="fluid" type="date" placeholder="Date" id="date">
                         </div>
                     </div>
 
                     <label for="company">Company</label>
                     <input class="fluid" type="text" placeholder="Company" id="company">
                     <label for="employees">Employees</label>
-                    <select class="fluid" id="employees">
+                    <select class="fluid " id="employees">
                         <option value="0-10">0-10</option>
                         <option value="10-50">10-50</option>
                         <option value="50-100">50-100</option>
@@ -189,7 +211,7 @@
             <form>
                 <div class="row"></div>
                 <input type="search" placeholder="Search here..."/>
-                <input type="submit" value="Search"/>
+                <input type="submit" class="button button-primary"  value="Search"/>
             </form>
         </div>
     </section>
@@ -604,13 +626,13 @@
                     <div class="column">
                         <div class="card">
                             <div class="card-header">
-                                <img alt="Placeholder Image" src="https://via.placeholder.com/500x250"/>
+                                <h5>Card title</h5>
                             </div>
                             <div class="card-body">
                                 <h5>Card title</h5>
                                 <p>Some quick example text to build on the card title and make up the bulk of
                                     the card's content.</p>
-                                <a href="#" class="button button-outline">View details</a>
+                                <a href="#" class="button button-outline-primary">View details</a>
                             </div>
                         </div>
                     </div>
@@ -627,7 +649,7 @@
                                 <h5>Card title</h5>
                                 <p>Some quick example text to build on the card title and make up the bulk of
                                     the card's content.</p>
-                                <a href="#" class="button button-black">View details</a>
+                                <a href="#" class="button button-secondary">View details</a>
                             </div>
                         </div>
                     </div>
@@ -700,35 +722,35 @@
 
                 <div class="notification notification-primary" role="alert">
                     This is a primary alert!
-                    <span class="close">x</span>
+                    <span class="close">+</span>
                 </div>
                 <div class="notification notification-secondary" role="alert">
                     This is a secondary alert!
-                    <span class="close">x</span>
+                    <span class="close">+</span>
                 </div>
                 <div class="notification notification-success" role="alert">
                     This is a success alert!
-                    <span class="close">x</span>
+                    <span class="close">+</span>
                 </div>
                 <div class="notification notification-danger" role="alert">
                     This is a danger alert!
-                    <span class="close">x</span>
+                    <span class="close">+</span>
                 </div>
                 <div class="notification notification-warning" role="alert">
                     This is a warning alert!
-                    <span class="close">x</span>
+                    <span class="close">+</span>
                 </div>
                 <div class="notification notification-info" role="alert">
                     This is a info alert!
-                    <span class="close">x</span>
+                    <span class="close">+</span>
                 </div>
                 <div class="notification notification-light" role="alert">
                     This is a light alert!
-                    <span class="close">x</span>
+                    <span class="close">+</span>
                 </div>
                 <div class="notification notification-dark" role="alert">
                     This is a dark alert!
-                    <span class="close">x</span>
+                    <span class="close">+</span>
                 </div>
             </div>
         </div>
@@ -747,7 +769,7 @@
                 <div class="row">
                     <div class="column">
                         <div class="box">
-                            <form>
+                            <form class="mb-0">
                                 <h4><strong>Login</strong></h4>
 
                                 <label for="email">Email:</label>
@@ -756,14 +778,14 @@
 
                                 <label for="email">Password:</label>
                                 <input class="fluid" type="email" placeholder="Your Password"/>
-                                <input class="fluid" type="submit" placeholder="Login"/>
+                                <input class="fluid mb-0" type="submit" placeholder="Login"/>
                             </form>
                         </div>
                     </div>
 
                     <div class="column">
                         <div class="box">
-                            <form>
+                            <form class="mb-0">
                                 <h4><strong>Register</strong></h4>
                                 <label for="email">Your name:</label>
                                 <input class="fluid" type="text" placeholder="Your name"/>
@@ -777,7 +799,7 @@
 
                                 <label for="email">Repeat password:</label>
                                 <input class="fluid" type="email" placeholder="Repeat Password"/>
-                                <input class="fluid" type="submit" placeholder="Login"/>
+                                <input class="fluid mb-0" type="submit" placeholder="Login"/>
                             </form>
                         </div>
                     </div>
@@ -831,39 +853,6 @@
 
             </div>
         </div>
-
-        <div class="container">
-            <div class="demo">
-                <h3><strong>Tabs</strong></h3>
-                <p>CSS only Tabs</p>
-                <div class="tabs">
-                    <div class="tab">
-                        <input type="radio" id="tab-1" name="tab-group-1" checked>
-                        <label for="tab-1">Tab One</label>
-
-                        <div class="content">
-                            Stuff from tab 1
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <input type="radio" id="tab-2" name="tab-group-1">
-                        <label for="tab-2">Tab Two</label>
-
-                        <div class="content">
-                            Stuff from tab 2
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <input type="radio" id="tab-3" name="tab-group-1">
-                        <label for="tab-3">Tab Three</label>
-
-                        <div class="content">
-                            Stuff from tab 3
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <div class="container">
@@ -891,15 +880,22 @@
                 </div>
                 <div class="column column-3 offset-1">
                     <p><strong>Buttons with icons</strong></p>
-                    <p><a class="button button-black button-small fluid" href="#">Sign out <i class="fas fa-sign-out-alt"></i></a></p>
-                    <p><a class="button button-outline fluid" href="#"><i class="fas fa-cloud-upload"></i> Upload</a></p>
-                    <p><a class="button button-secondary fluid" href="#">Send mail <i class="fas fa-location-arrow"></i></a></p>
-                    <p><a class="button button-large button-success fluid" href="#">Follow <i class="fas fa-arrow-circle-right"></i></a></p>
+                    <p><a class="button button-black button-small fluid" href="#">Sign out <i
+                            class="fas fa-sign-out-alt"></i></a></p>
+                    <p><a class="button button-outline-primary fluid" href="#"><i class="fas fa-cloud-upload"></i> Upload</a>
+                    </p>
+                    <p><a class="button button-secondary fluid" href="#">Send mail <i class="fas fa-location-arrow"></i></a>
+                    </p>
+                    <p><a class="button button-large button-success fluid" href="#">Follow <i
+                            class="fas fa-arrow-circle-right"></i></a></p>
                 </div>
                 <div class="column column-4 offset-1">
                     <p><strong>Text with icons</strong></p>
-                    <h5 class="color-success-hover"><i class="far fa-check-circle"></i> <strong>User is verified</strong></h5>
-                    <p>You can also add different colors to your icons. Use color classes like <code>.color-warning</code> in your icon code. Like this <i class="fas fa-carrot color-warning"></i> carrot!</p>
+                    <h5 class="color-success-hover"><i class="far fa-check-circle"></i> <strong>User is
+                        verified</strong></h5>
+                    <p>You can also add different colors to your icons. Use color classes like
+                        <code>.color-warning</code> in your icon code. Like this <i
+                                class="fas fa-carrot color-warning"></i> carrot!</p>
                 </div>
             </div>
         </div>
