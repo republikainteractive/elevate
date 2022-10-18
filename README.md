@@ -1,2 +1,2 @@
 # Elevate
-Easy framework for busy frontend developers
+Easy frontent framework for busy web developers
